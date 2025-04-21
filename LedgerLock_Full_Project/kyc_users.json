@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Likki",
+        "national_id": "1234",
+        "country": "India",
+        "user_id": "5678",
+        "address": "Madhurawada",
+        "kyc_status": "Not Verified"
+    },
+    {
+        "name": "Vamsi",
+        "national_id": "5313",
+        "country": "India",
+        "user_id": "91822",
+        "address": "Bangalore",
+        "kyc_status": "Not Verified"
+    },
+    {
+        "name": "Pavan",
+        "national_id": "9876",
+        "country": "IN",
+        "user_id": "6969",
+        "address": "Srikakulam",
+        "kyc_status": "Verified"
+    },
+    {
+        "name": "Likitha",
+        "national_id": "8989",
+        "country": "US",
+        "user_id": "5513",
+        "address": "Visakhapatnam",
+        "kyc_status": "Verified"
+    },
+    {
+        "name": "Uday",
+        "national_id": "2323",
+        "country": "IN",
+        "user_id": "4545",
+        "address": "Pakisthan",
+        "kyc_status": "Verified"
+    },
+    {
+        "name": "Gayatri",
+        "national_id": "2409",
+        "country": "IN",
+        "user_id": "36",
+        "address": "Bhogapuram",
+        "kyc_status": "Verified"
+    },
+    {
+        "name": "kajal",
+        "national_id": "2045",
+        "country": "IN",
+        "user_id": "31",
+        "address": "yendada",
+        "kyc_status": "Verified"
+    }
+]

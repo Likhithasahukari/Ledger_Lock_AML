@@ -1,0 +1,38 @@
+[
+    {
+        "id": "ff2ce35f-511f-48c9-b40f-a175560b05cc",
+        "timestamp": 1745124598.1866262,
+        "sender_id": "6969",
+        "receiver_id": "5513",
+        "amount": 10000.0,
+        "sender_country": "India",
+        "receiver_country": "India",
+        "speed": 1,
+        "risk_score": 40,
+        "status": "Approved"
+    },
+    {
+        "id": "4586647d-f6a6-4b5c-9b49-d60489baa7b1",
+        "timestamp": 1745217958.413433,
+        "sender_id": "36",
+        "receiver_id": "6969",
+        "amount": 4980.0,
+        "sender_country": "India",
+        "receiver_country": "India",
+        "speed": 1,
+        "risk_score": 33,
+        "status": "Approved"
+    },
+    {
+        "id": "1387507c-7862-456f-bcc5-6fa1fe5119bb",
+        "timestamp": 1745218828.815739,
+        "sender_id": "36",
+        "receiver_id": "4545",
+        "amount": 9997.0,
+        "sender_country": "India",
+        "receiver_country": "Pakisthan",
+        "speed": 1,
+        "risk_score": 42,
+        "status": "Approved"
+    }
+]

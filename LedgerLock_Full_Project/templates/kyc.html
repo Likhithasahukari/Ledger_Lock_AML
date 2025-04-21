@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYC Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .kyc-card {
+            max-width: 700px;
+            margin-top: 30px;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transform: scale(1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .kyc-card:hover {
+            transform: scale(1.02);
+        }
+
+        .kyc-header h2 {
+            font-weight: bold;
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .kyc-header p {
+            font-size: 1rem;
+            color: #777;
+        }
+
+        .form-control, .form-select, textarea {
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            transition: border 0.3s ease;
+        }
+
+        .form-control:focus, .form-select:focus, textarea:focus {
+            border-color: #ff7e5f;
+            box-shadow: 0 0 10px rgba(255, 126, 95, 0.6);
+        }
+
+        .btn-success {
+            padding: 12px 40px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            background-color: #28a745;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-success:hover {
+            background-color: #218838;
+        }
+
+        .btn-outline-secondary {
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            color: #28a745;
+            border-color: #28a745;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .btn-outline-secondary:hover {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .kyc-card .mb-3 label {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .kyc-card .text-center {
+            margin-top: 20px;
+        }
+
+        /* Animation for form labels */
+        .form-label {
+            transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        .form-control:focus ~ .form-label,
+        .form-select:focus ~ .form-label {
+            transform: translateY(-20px);
+            color: #ff7e5f;
+            font-size: 0.85rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="kyc-card card shadow-sm">
+        <div class="kyc-header text-center mb-4">
+            <h2><i class="fas fa-id-card"></i> KYC Registration</h2>
+            <p class="text-muted">Enter user details to verify identity and country</p>
+        </div>
+        <form method="POST">
+            <div class="mb-3">
+                <label class="form-label">Full Name</label>
+                <input name="name" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">National ID</label>
+                <input name="national_id" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Country</label>
+                <select name="country" class="form-select" required>
+                    <option value="">Select Country</option>
+                    <option value="IN">India (IN)</option>
+                    <option value="US">United States (US)</option>
+                    <option value="SG">Singapore (SG)</option>
+                    <option value="UK">United Kingdom (UK)</option>
+                    <option value="DE">Germany (DE)</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">User ID</label>
+                <input name="user_id" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Address</label>
+                <textarea name="address" class="form-control" required></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-success px-5"><i class="fas fa-check-circle"></i> Verify & Register</button>
+                <a href="/" class="btn btn-outline-secondary ms-3"><i class="fas fa-arrow-left"></i> Back</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
